@@ -11,6 +11,7 @@ library(plotly)
 data(mtcars)
 head(mtcars)
 ```
+Support to explore the data and to gain the insights required to determine which data to use. Variables to be used, which models would be better used to forecast costs, how to convert. Classical variables in numerical variables, and how to scale the numerical variables. By seeing we can say that the third modeel has loww RSS and P valuses compared to others, So it is the best one amoung them From this we can say that the am,qsec and wt includes the graph.
 ```{r}
 plot_ly(mtcars) %>%
     add_trace(x = ~mpg, y = ~cyl, type="scatter", mode = "markers",name = "cylinder", legendgroup = "cylinder", 
